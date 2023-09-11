@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Instagram With Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f9fef7482c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar  navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <img src="InstaLogo.png" class="rounded float-start"> 
+            <div class="collapse navbar-collapse  d-flex justify-content-end ">
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new Post
+            </button>
+            <div class="btn-group d-flex p-5">
+              <button type="button" width="30" height="30" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesability</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><hr class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" href="#">Log out</a></li>
+              </ul>
+            </div>
+            </div>
+          </nav>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a New Post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h1 class="modal-title fs-6">Caption:</h1>
+                    <textarea class="form-control"></textarea>
+                    <div>
+                      <button type="image" class="fa-solid fa-camera"></button>
+                      <button type="image" class="fa-solid fa-location-dot"></button>
+                     </div>...
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Modal -->
+
+              <div class="container text-center p-5">
+              <a class="btn bg-secondary btn-sm mb-4"  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa-solid fa-table-columns"></i>
+              </a>
+              <div class="collapse" id="collapseExample">
+                <div class="row mb-2 gx-2">
+                <div class="col-4 ">
+                  <img  src="Bonaire.jpg" width="100%" alt="">
+                </div>
+                <div class="col-4">
+                  <img src="Mochima.jpg" width="100%" alt="">
+                </div>
+                <div class="col-4">
+                  <img src="tuja.jpg" width="100%" alt="">
+                </div>
+              </div>
+
+              <div class="row mb-2  gx-2">
+                <div class="col-4">
+                  <img  src="Messi.jpg" width="100%" alt="">
+                </div>
+                <div class="col-4">
+                  <img src="ball.jpg" width="100%" alt="">
+                </div>
+                <div class="col-4">
+                  <img src="fifa.jpeg" width="100%" alt="">
+                </div>
+              </div>
+
+              <div class="row mb-2  gx-2">
+                <div class="col-4">
+                  <img  src="mexico.jpg" width="100%" alt="">
+                </div>
+                <div class="col-4">
+                  <img src="bike.jpg" width="100%" alt="">
+                </div>
+                <div class="col-4">
+                  <img src="Bonaire.jpg" width="100%" alt="">
+                </div>
+              </div>
+            </div>
+
+    </body>
+</html>  
+    
+

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Instagram With Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f9fef7482c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    .main{
+      width: 100%;
+      height: auto;
+    }
+    .header.p{
+      float: right;
+    }
+
+    
+    
+
+  </style>  
+  </head>
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar  navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <img src="InstaLogo.png" class="rounded float-start"> 
+            <div class="collapse navbar-collapse  d-flex justify-content-end ">
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new Post
+            </button>
+            <div class="btn-group d-flex p-5">
+              <button type="button" width="30" height="30" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesability</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><hr class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" href="#">Log out</a></li>
+              </ul>
+            </div>
+            </div>
+          </nav>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a New Post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h1 class="modal-title fs-6">Caption:</h1>
+                    <textarea class="form-control"></textarea>
+                    <div>
+                      <button type="image" class="fa-solid fa-camera"></button>
+                      <button type="image" class="fa-solid fa-location-dot"></button>
+                     </div>...
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Modal -->
+
+            
+              <div class="container text-center justify-content-center p-5">
+              <div class="main">
+                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-grip"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-grip-vertical"></i></button>
+                </li>
+                
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                  <div class="row mb-2 gx-2">
+                    <div class="col-4 ">
+                      <img  src="Bonaire.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-4">
+                      <img src="Mochima.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-4">
+                      <img src="tuja.jpg" width="100%" alt="">
+                    </div>
+                  </div>
+    
+                  <div class="row mb-2  gx-2">
+                    <div class="col-4">
+                      <img  src="Messi.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-4">
+                      <img src="ball.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-4">
+                      <img src="fifa.jpeg" width="100%" alt="">
+                    </div>
+                  </div>
+    
+                  <div class="row mb-2  gx-2">
+                    <div class="col-4">
+                      <img  src="mexico.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-4">
+                      <img src="bike.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-4">
+                      <img src="Bonaire.jpg" width="100%" alt="">
+                    </div>
+                  </div>
+               </div>
+
+                <div class="tab-pane fade" d-flex justify-content-center id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                  <!--First image-->
+                  <div class="mx-auto p-2" style="width: 600px;">
+                    <div class="card" style="width: 600px;">
+                      <div class="header">
+                        <div>
+                          <h2 class="float-start mt-2 p-2">Bonaire Beach</h2>
+                        </div>
+                        <div>
+                          <p class="float-end mt-2 p-2" >12/14</p>
+                        </div>
+                        
+                      </div>
+                      <img src="Bonaire.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div>
+                        <h5 class="float-start  ">240 Likes</h5>
+                        </div>
+                        <div>
+                        <p class="float-start">Special municipality, integral part of the Netherlands and member of the overseas countries and territories of the European Union (RUUE), located in the northern region of South America.</p>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <!--End First Image-->
+
+                <!--Second Images-->
+              <div class="mx-auto p-2" style="width: 600px;">
+                  <div class="card" style="width: 600px;">
+                    <div class="header">
+                      <div>
+                        <h2 class="float-start mt-2 p-2">Mochima Beach</h2>
+                      </div>
+                      <div>
+                        <p class="float-end mt-2 p-2" >13/14</p>
+                      </div>
+                      </div>
+                    <img src="Mochima.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div>
+                      <h5 class="float-start  ">540 Likes</h5>
+                      </div>
+                      <div>
+                      <p class="float-start">National park that is located between the states of Sucre and Anzoátegui in eastern Venezuela. It was declared as such on December 19, 1973.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!--end Second--> 
+
+               <!--Thrid Image-->
+               <div class="mx-auto p-2" style="width: 600px;">
+                <div class="card" style="width: 600px;">
+                  <div class="header">
+                    <div>
+                      <h2 class="float-start mt-2 p-2">Tuja Beach</h2>
+                    </div>
+                    <div>
+                      <p class="float-end mt-2 p-2" >15/14</p>
+                    </div>
+                    </div>
+                  <img src="tuja.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div>
+                    <h5 class="float-start  ">540 Likes</h5>
+                    </div>
+                    <div>
+                    <p class="float-start">Tuja or Punta de Tuja, is a short beach in the state of Aragua (Venezuela), surrounded by numerous mountains, with crystal-clear waters and great marine fauna that make snorkeling and diving possible and more enjoyable.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+              <!--End Thrid Image-->
+
+               <!--Fourth Image-->
+
+               <div class="mx-auto p-2" style="width: 600px;">
+                <div class="card" style="width: 600px;">
+                  <div class="header">
+                    <div>
+                      <h2 class="float-start mt-2 p-2">Lionel Messi 10!</h2>
+                    </div>
+                    <div>
+                      <p class="float-end mt-2 p-2" >14/14</p>
+                    </div>
+                    </div>
+                  <img src="Messi.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div>
+                    <h5 class="float-start  ">940 Likes</h5>
+                    </div>
+                    <div>
+                    <p class="float-start">Lionel Andrés Messi Cuccittini (Rosario, June 24, 1987), known as Leo Messi, is an Argentine soccer player who plays as a forward for Inter Miami of Major League Soccer.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+           <!--End Fourth-->
+
+              </div>
+
+              </div>
+
+              </div>    
+          
+            </div>
+                  
+                  
+      </div>
+                  
+    </body>
+  </html>  
+      
